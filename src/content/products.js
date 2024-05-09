@@ -12,7 +12,7 @@ const products = {
 
         productCatalog = [{
             "productID" : 1,
-            "type": "item",
+            "type": "moon",
             "class": 2,
             "title": i18n.getString("title", "1"),
             "price": 3000,
@@ -22,7 +22,7 @@ const products = {
         },
         {
             "productID" : 2,
-            "type": "item",
+            "type": "moon",
             "class": 4,
             "title": i18n.getString("title", "2"),
             "price": 800,
@@ -32,7 +32,7 @@ const products = {
         },
         {
             "productID" : 3,
-            "type": "item",
+            "type": "moon",
             "class": 1,
             "title": i18n.getString("title", "3"),
             "price": 4300,
@@ -42,7 +42,7 @@ const products = {
         },
         {
             "productID" : 4,
-            "type": "item",
+            "type": "moon",
             "title": i18n.getString("title", "4"),
             "price": 4500,
             "qty": 0,
@@ -51,7 +51,7 @@ const products = {
         },
         {
             "productID" : 5,
-            "type": "new",
+            "type": "coffee",
             "title": i18n.getString("title", "5"),
             "price": 1000000,
             "qty": 0,
@@ -60,7 +60,7 @@ const products = {
         },
         {
             "productID" : 6,
-            "type": "item",
+            "type": "moon",
             "title": i18n.getString("title", "6"),
             "price": 5210,
             "qty": 0,
@@ -69,7 +69,7 @@ const products = {
         },
         {
             "productID" : 7,
-            "type": "new",
+            "type": "coffee",
             "title": i18n.getString("title", "7"),
             "price": 1500000,
             "qty": 0,
@@ -78,7 +78,7 @@ const products = {
         },
         {
             "productID" : 8,
-            "type": "new",
+            "type": "coffee",
             "title": i18n.getString("title", "8"),
             "price": 8000,
             "qty": 0,
@@ -88,7 +88,7 @@ const products = {
         /*
         {
             "productID" : 9,
-            "type": "item",
+            "type": "moon",
             "title": i18n.getString("title", "9"),
             "price": 200000,
             "qty": 0,
@@ -97,7 +97,7 @@ const products = {
         },
         {
             "productID" : 10,
-            "type": "item",
+            "type": "moon",
             "title": i18n.getString("title", "10"),
             "price": 3450,
             "qty": 0,
@@ -106,7 +106,7 @@ const products = {
         },
         {
             "productID" : 11,
-            "type": "new",
+            "type": "coffee",
             "title": i18n.getString("title", "11"),
             "price": 150000,
             "qty": 0,
@@ -115,7 +115,7 @@ const products = {
         },
         {
             "productID" : 12,
-            "type": "new",
+            "type": "coffee",
             "title": i18n.getString("title", "12"),
             "price": 134999,
             "qty": 0,
@@ -124,7 +124,7 @@ const products = {
         },
         {
             "productID" : 13,
-            "type": "item",
+            "type": "moon",
             "title": i18n.getString("title", "13"),
             "price": 4999,
             "qty": 0,

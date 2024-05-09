@@ -38,8 +38,8 @@
         "arrowAlt": "Drop Down Arrow",
         "cartAlt": "show cart",
         "navLinkHome": "HOME",
-        "navLinkItems": "ITEMS",
-        "navLinkNew": "NEW"
+        "navLinkMoons": "MOONS",
+        "navLinkCoffees": "COFFEES"
     },
     "Home": {
         "welcomeSubtitle": "Everything Moonbucks is here. Welcome to the Moon!",
