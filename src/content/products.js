@@ -27,7 +27,7 @@ const products = {
             "title": i18n.getString("title", "2"),
             "price": 800,
             "qty": 0,
-            "imageURL": "Moonbucks_MediumRoast",
+            "imageURL": "Moonbucks_MediumRoast.jpg",
             "desc": i18n.getString("desc", "2")
         },
         {
@@ -51,84 +51,84 @@ const products = {
         },
         {
             "productID" : 5,
-            "type": "vehicle",
+            "type": "new",
             "title": i18n.getString("title", "5"),
             "price": 1000000,
             "qty": 0,
-            "imageURL": "img/Sphyrna_Corevette.png",
+            "imageURL": "img/Moonbucks_LightRoast.jpg",
             "desc": i18n.getString("desc", "5")
         },
         {
             "productID" : 6,
-            "type": "droid",
+            "type": "item",
             "title": i18n.getString("title", "6"),
             "price": 5210,
             "qty": 0,
-            "imageURL": "img/G2.png",
+            "imageURL": "img/Moonbucks_PicnicBlanket.jpg",
             "desc": i18n.getString("desc", "6")
         },
         {
             "productID" : 7,
-            "type": "vehicle",
+            "type": "new",
             "title": i18n.getString("title", "7"),
             "price": 1500000,
             "qty": 0,
-            "imageURL": "img/CR90.png",
+            "imageURL": "img/Moonbucks_FrenchPress.jpg",
             "desc": i18n.getString("desc", "7")
         },
         {
             "productID" : 8,
-            "type": "vehicle",
+            "type": "new",
             "title": i18n.getString("title", "8"),
             "price": 8000,
             "qty": 0,
-            "imageURL": "img/74-Z.png",
+            "imageURL": "img/Moonbucks_DarkRoast.jpg",
             "desc": i18n.getString("desc", "8")
         },
         /*
         {
             "productID" : 9,
-            "type": "vehicle",
+            "type": "item",
             "title": i18n.getString("title", "9"),
             "price": 200000,
             "qty": 0,
-            "imageURL": "img/ETA-2.png",
+            "imageURL": "img/Moonbucks_HerbalTea.jpg",
             "desc": i18n.getString("desc", "9")
         },
         {
             "productID" : 10,
-            "type": "droid",
+            "type": "item",
             "title": i18n.getString("title", "10"),
             "price": 3450,
             "qty": 0,
-            "imageURL": "img/R3.png",
+            "imageURL": "img/Moonbucks_Earrings.jpg",
             "desc": i18n.getString("desc", "10")
         },
         {
             "productID" : 11,
-            "type": "vehicle",
+            "type": "new",
             "title": i18n.getString("title", "11"),
             "price": 150000,
             "qty": 0,
-            "imageURL": "img/T70.png",
+            "imageURL": "img/Moonbucks_ElectricMilkFrother.jpg",
             "desc": i18n.getString("desc", "11")
         },
         {
             "productID" : 12,
-            "type": "vehicle",
+            "type": "new",
             "title": i18n.getString("title", "12"),
             "price": 134999,
             "qty": 0,
-            "imageURL": "img/Y-Wing.png",
+            "imageURL": "img/Moonbucks_Spoon.jpg",
             "desc": i18n.getString("desc", "12")
         },
         {
             "productID" : 13,
-            "type": "droid",
+            "type": "item",
             "title": i18n.getString("title", "13"),
             "price": 4999,
             "qty": 0,
-            "imageURL": "img/Super_Tactical.png",
+            "imageURL": "img/Moonbucks_CoffeeMakerDustCover.jpg",
             "desc": i18n.getString("desc", "13")
         }
         */
