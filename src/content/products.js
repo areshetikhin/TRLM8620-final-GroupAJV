@@ -12,41 +12,41 @@ const products = {
 
         productCatalog = [{
             "productID" : 1,
-            "type": "droid",
+            "type": "item",
             "class": 2,
             "title": i18n.getString("title", "1"),
             "price": 3000,
             "qty": 0,
-            "imageURL": "img/3PO.png",
+            "imageURL": "Moonbucks_Mug.jpeg",
             "desc": i18n.getString("desc", "1")
         },
         {
             "productID" : 2,
-            "type": "droid",
+            "type": "item",
             "class": 4,
             "title": i18n.getString("title", "2"),
             "price": 800,
             "qty": 0,
-            "imageURL": "img/DUM-series.png",
+            "imageURL": "Moonbucks_MediumRoast",
             "desc": i18n.getString("desc", "2")
         },
         {
             "productID" : 3,
-            "type": "droid",
+            "type": "item",
             "class": 1,
             "title": i18n.getString("title", "3"),
             "price": 4300,
             "qty": 0,
-            "imageURL": "img/2-1B.png",
+            "imageURL": "Moonbucks_CoffeeFilters.jpg",
             "desc": i18n.getString("desc", "3")
         },
         {
             "productID" : 4,
-            "type": "droid",
+            "type": "item",
             "title": i18n.getString("title", "4"),
             "price": 4500,
             "qty": 0,
-            "imageURL": "img/IG-88.png",
+            "imageURL": "Moonbucks_Tumbler.jpg",
             "desc": i18n.getString("desc", "4")
         },
         {
