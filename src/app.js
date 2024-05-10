@@ -121,12 +121,12 @@ productList.set("coffees", new Map());
 
 //function to get products and push to map
 let getProductsList = async() => {
-    let itemMap = productList.get("moons");
-    let newMap = productList.get("coffees");
+    let moonMap = productList.get("moons");
+    let coffeeMap = productList.get("coffees");
 
     //clear em out
-    itemMap.clear();
-    newMap.clear();
+    moonMap.clear();
+    coffeeMap.clear();
 
     let productsJSON = await Products.loadProductCatalog();
 
