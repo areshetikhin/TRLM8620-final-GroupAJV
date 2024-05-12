@@ -84,20 +84,20 @@ var updateLocale = async(newLocale) => {
 var reloadCart = () => {
 
     //get references to droid and vehicle map
-    let moonMap = productList.get("moons");
-    let coffeeMap = productList.get("coffees");
+    let droidMap = productList.get("droids");
+    let vehicleMap = productList.get("vehicles");
 
     for(let key in shoppingCart) {
         let product = shoppingCart[key];
         let saveQty;
-        if(product.type == "moon") {
+        if(product.type == "droid") {
             saveQty = product.qty;
-            shoppingCart[product.productID] = moonMap.get(product.productID);
+            shoppingCart[product.productID] = droidMap.get(product.productID);
             shoppingCart[product.productID].qty = saveQty;
         }
         else {
             saveQty = product.qty;
-            shoppingCart[product.productID] = coffeeMap.get(product.productID);
+            shoppingCart[product.productID] = vehicleMap.get(product.productID);
             shoppingCart[product.productID].qty = saveQty;
         }
     }
@@ -116,27 +116,27 @@ var saveCart = () => {
 
 //map of maps to hold both vehicles and droids
 var productList = new Map();
-productList.set("moons", new Map());
-productList.set("coffees", new Map());
+productList.set("droids", new Map());
+productList.set("vehicles", new Map());
 
 //function to get products and push to map
 let getProductsList = async() => {
-    let moonMap = productList.get("moons");
-    let coffeeMap = productList.get("coffees");
+    let droidMap = productList.get("droids");
+    let vehicleMap = productList.get("vehicles");
 
     //clear em out
-    moonMap.clear();
-    coffeeMap.clear();
+    droidMap.clear();
+    vehicleMap.clear();
 
     let productsJSON = await Products.loadProductCatalog();
 
     for(let item of productsJSON) {
         //loop through parsed json and add to either droid Map or vehicle Map
-        if(item.type == "moon") {
-            moonMap.set(item.productID, item);
+        if(item.type == "droid") {
+            droidMap.set(item.productID, item);
         }
-        else if(item.type == "coffee") {
-            coffeeMap.set(item.productID, item);
+        else if(item.type == "vehicle") {
+            vehicleMap.set(item.productID, item);
         }
     }
 
@@ -155,20 +155,20 @@ var readCart = () => {
     if(localStorage.getItem("cart") !== null) {
         console.log("found cart in storage, reconstructing...");
 
-        let moonMap = productList.get("moons");
-        let coffeeMap = productList.get("coffees");
+        let droidMap = productList.get("droids");
+        let vehicleMap = productList.get("vehicles");
 
         let cartIdString = localStorage.getItem("cart");
         let cartIds = JSON.parse(cartIdString);
 
         for(let productAr of cartIds) {
-            if(productAr[1] == 'moon') { //$NON-NLS-L$
-                let product = moonMap.get(parseInt(productAr[0]));
+            if(productAr[1] == 'droid') { //$NON-NLS-L$
+                let product = droidMap.get(parseInt(productAr[0]));
                 product.qty = parseInt(productAr[2]);
                 shoppingCart[productAr[0]] = product;
             }
             else {
-                let product = coffeeMap.get(parseInt(productAr[0]));
+                let product = vehicleMap.get(parseInt(productAr[0]));
                 product.qty = parseInt(productAr[2]);
                 shoppingCart[productAr[0]] = product;
             }
@@ -209,13 +209,13 @@ let featuredProducts = [];
 let getFeaturedProducts = async () => {
     featuredProducts = [];
 
-    let moonMap = productList.get('moons');
-    let coffeeMap = productList.get('coffees');
+    let droidMap = productList.get('droids');
+    let vehicleMap = productList.get('vehicles');
    
-    featuredProducts.push(moonMap.get(5));
-    featuredProducts.push(coffeeMap.get(1));
-    featuredProducts.push(coffeeMap.get(8));
-    featuredProducts.push(moonMap.get(2));
+    featuredProducts.push(droidMap.get(5));
+    featuredProducts.push(vehicleMap.get(1));
+    featuredProducts.push(droidMap.get(8));
+    featuredProducts.push(vehicleMap.get(2));
 }
 
 export { shoppingCart, addToCart, showCart, router, locale, productList, updateLocale, orderHistory, featuredProducts, saveCart };
@@ -223,10 +223,10 @@ export { shoppingCart, addToCart, showCart, router, locale, productList, updateL
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
     './' : Home, 
-    './moons' : Browse,
-    './moons/:id' : ProductShow,
-    './coffees' : Browse,
-    './coffees/:id' : ProductShow,
+    './droids' : Browse,
+    './droids/:id' : ProductShow,
+    './vehicles' : Browse,
+    './vehicles/:id' : ProductShow,
     './history' : OrderHistory,
     './checkout' : Checkout
 };
@@ -247,7 +247,7 @@ const router = async () => {
     const ham = null || document.querySelector('.hamSlider');
 
     //grab products from JSON file
-    if(productList.get("moons").size == 0 && productList.get("coffees").size == 0) {
+    if(productList.get("droids").size == 0 && productList.get("vehicles").size == 0) {
         await getProductsList();
     }
     
