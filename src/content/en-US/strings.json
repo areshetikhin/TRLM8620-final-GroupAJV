@@ -38,8 +38,8 @@
         "arrowAlt": "Drop Down Arrow",
         "cartAlt": "show cart",
         "navLinkHome": "HOME",
-        "navLinkMoons": "MOONS",
-        "navLinkCoffees": "COFFEES"
+        "navLinkDroids": "MOONS",
+        "navLinkVehicles": "COFFEES"
     },
     "Home": {
         "welcomeSubtitle": "Welcome to the Moon! We serve coffee.",
